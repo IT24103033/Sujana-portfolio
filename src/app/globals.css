@@ -1,0 +1,54 @@
+/* STREAMING_CHUNK: Importing the Tailwind CSS engine... */
+@import "tailwindcss";
+
+@theme {
+/* High-fidelity color tokens mapped directly from your design system rules */
+--color-spaceDark: #0C0D0E;
+--color-spaceCard: #141619;
+--color-neonCyan: #06B6D4;
+--color-neonPurple: #A855F7;
+--color-borderDefault: #272A30;
+--color-textPrimary: #F3F4F6;
+--color-textMuted: #9CA3AF;
+
+/* Typography configuration matching Space Grotesk/Inter styles */
+--font-sans: var(--font-geist-sans), "Inter", sans-serif;
+--font-mono: var(--font-geist-mono), "Roboto Mono", monospace;
+
+/* High-contrast active border glow presets */
+--shadow-glowCyan: 0 0 20px rgba(6, 182, 212, 0.15);
+--shadow-glowPurple: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* STREAMING_CHUNK: Applying baseline page layouts and smooth scroll... */
+html {
+scroll-behavior: smooth;
+background-color: var(--color-spaceDark);
+color: var(--color-textPrimary);
+}
+
+body {
+background-color: var(--color-spaceDark);
+color: var(--color-textPrimary);
+overflow-x: hidden;
+}
+
+/* STREAMING_CHUNK: Custom cyber scrollbar styling for a premium look... */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+::-webkit-scrollbar-track {
+background: var(--color-spaceDark);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--color-spaceCard);
+border: 1px solid var(--color-borderDefault);
+border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--color-neonCyan);
+}
+
