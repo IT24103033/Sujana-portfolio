@@ -18,7 +18,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg text-textMuted leading-relaxed max-w-2xl">
-            Software Engineering Student & Full-Stack Developer crafting performant, 
+            Software Engineering Student at SLIIT & Full-Stack Developer crafting performant, 
             production-grade systems from hardware-adjacent C to distributed microservices.
           </p>
 
@@ -32,7 +32,7 @@ export default function Hero() {
             </a>
             
             <a
-              href="/resume.pdf"
+              href="/Sujana_Resume.pdf"
               download
               className="inline-flex items-center space-x-2 px-6 py-3 border border-borderDefault bg-spaceCard hover:bg-white/[0.04] text-textPrimary hover:border-textMuted hover:scale-[1.02] font-medium text-sm rounded-lg transition-all duration-300"
             >
@@ -98,7 +98,7 @@ export default function Hero() {
         <div className="space-y-1 md:border-r border-borderDefault md:pr-4">
           <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">// Projects Built</div>
           <div className="text-xl font-bold text-textPrimary flex items-center space-x-2">
-            <span className="text-neonCyan">12+</span>
+            <span className="text-neonCyan">4+</span>
             <span className="text-xs font-normal text-textMuted font-mono">Deployments</span>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Hero() {
         <div className="space-y-1 md:pl-6">
           <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">// Active Learning</div>
           <div className="text-xl font-bold text-textPrimary">
-            <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(168,85,247,0.4)] font-semibold">OS Architecture</span>
+            <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(168,85,247,0.4)] font-semibold">DevOps</span>
           </div>
         </div>
 
