@@ -61,13 +61,19 @@ export default function Contact() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-neonPurple/[0.01] pointer-events-none" />
 
         <div className="max-w-2xl mx-auto space-y-8 relative z-10">
-          <div className="space-y-3 text-center sm:text-left">
-            <span className="text-xs font-mono text-neonPurple tracking-widest uppercase block">// SECURE COMMUNICATIONS CHANNEL</span>
-            <h2 className="text-3xl font-extrabold tracking-tight text-textPrimary">
-              Let&apos;s collaborate.
+          <div className="space-y-4 text-center">
+            <div className="inline-flex items-center justify-center space-x-4 w-full">
+              <span className="h-[1px] w-8 sm:w-12 bg-neonPurple/50" />
+              <span className="text-xs font-mono text-neonPurple tracking-widest uppercase font-semibold">
+                OPEN TO OPPORTUNITIES
+              </span>
+              <span className="h-[1px] w-8 sm:w-12 bg-neonPurple/50" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-textPrimary">
+              Let&apos;s collaborate on something <span className="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-cyan-400 drop-shadow-[0_0_15px_rgba(6,182,212,0.3)]">extraordinary.</span>
             </h2>
-            <p className="text-sm text-textMuted leading-relaxed">
-              Have a question or want to work together? Fill out the form below and I&apos;ll get back to you as soon as possible.
+            <p className="text-sm sm:text-base text-textMuted max-w-xl mx-auto leading-relaxed">
+              Currently available for internships, freelance contracts, and collaborative research.
             </p>
           </div>
 

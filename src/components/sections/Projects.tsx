@@ -5,8 +5,7 @@ export default function Projects() {
     return url.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {};
   };
 
-  const novamartArch = process.env.NEXT_PUBLIC_NOVAMART_ARCH || "#";
-  const novamartDemo = process.env.NEXT_PUBLIC_NOVAMART_DEMO || "#";
+  const scanmarkRepo = process.env.NEXT_PUBLIC_SCANMARK_REPO || "#";
   const soundflowRepo = process.env.NEXT_PUBLIC_SOUNDFLOW_REPO || "#";
   const qrGateCase = process.env.NEXT_PUBLIC_QRGATE_CASE || "#";
 
@@ -57,11 +56,14 @@ export default function Projects() {
             {/* Info Layout */}
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <h3 className="text-xl font-bold text-textPrimary group-hover:text-neonCyan transition-all duration-200">NovaMart</h3>
-                <span className="text-[10px] font-mono border border-neonCyan/30 text-neonCyan bg-neonCyan/5 px-2 py-0.5 rounded">E-COMMERCE SYSTEM</span>
+                <h3 className="text-xl font-bold text-textPrimary group-hover:text-neonCyan transition-all duration-200">ScanMark</h3>
+                <span className="text-[10px] font-mono border border-neonCyan/30 text-neonCyan bg-neonCyan/5 px-2 py-0.5 rounded">QR Based Attendance Management System</span>
               </div>
               <p className="text-sm text-textMuted leading-relaxed">
-                Distributed microservices architecture with real-time inventory management, multi-vendor support, and AI-driven recommendation engines processing 50k+ daily transactions.
+                A secure academic tracking platform engineered to eliminate proxy attendance through time-sensitive dynamic QR scanning. 
+                It features robust user authentication, automated session tracking, and an integrated real-time notification engine. Personally 
+                designed and implemented the central Module Management subsystem to cleanly coordinate complex course schedules and prevent 
+                timetable collisions.
               </p>
             </div>
           </div>
@@ -69,15 +71,14 @@ export default function Projects() {
           {/* Badges and action links */}
           <div className="mt-6 space-y-4">
             <div className="flex flex-wrap gap-2">
-              {["Java", "Spring Boot", "PostgreSQL", "Kafka"].map((tech) => (
+              {["Java", "Spring Boot", "React.js", "MongoDB"].map((tech) => (
                 <span key={tech} className="text-[10px] font-mono bg-white/[0.02] border border-white/10 text-textMuted px-2 py-1 rounded">
                   {tech}
                 </span>
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-2 border-t border-borderDefault/50">
-              <a href={novamartArch} {...getLinkProps(novamartArch)} className="text-xs font-mono text-neonCyan hover:underline">// View Architecture Diagram</a>
-              <a href={novamartDemo} {...getLinkProps(novamartDemo)} className="text-xs font-mono text-neonCyan hover:underline">// Cinematic Ad Demo</a>
+              <a href={scanmarkRepo} {...getLinkProps(scanmarkRepo)} className="text-xs font-mono text-neonCyan hover:underline">// GitHub Repository</a>
             </div>
           </div>
         </div>

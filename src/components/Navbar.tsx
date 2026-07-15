@@ -13,22 +13,30 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 280;
-      for (const item of navItems) {
-        const el = document.getElementById(item.id);
-        if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(item.id);
-            break;
-          }
-        }
-      }
+    const observerOptions = {
+      root: null, // uses the viewport
+      rootMargin: "-20% 0px -60% 0px", // triggers active state when element covers central screen area
+      threshold: 0,
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    navItems.forEach((item) => {
+      const el = document.getElementById(item.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
