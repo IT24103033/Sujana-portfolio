@@ -6,8 +6,11 @@ export default function Projects() {
   };
 
   const scanmarkRepo = process.env.NEXT_PUBLIC_SCANMARK_REPO || "#";
-  const soundflowRepo = process.env.NEXT_PUBLIC_SOUNDFLOW_REPO || "#";
+  const hirenearRepo = process.env.NEXT_PUBLIC_HIRENEAR_REPO || "#";
+  const hireneardesktopDemo = process.env.NEXT_PUBLIC_HIRENEAR_DESKTOP_DEMO || "#";
+  const hirenearmobileDemo = process.env.NEXT_PUBLIC_HIRENEAR_MOBILE_DEMO || "#";
   const qrGateCase = process.env.NEXT_PUBLIC_QRGATE_CASE || "#";
+
 
   return (
     <div className="w-full space-y-12">
@@ -71,7 +74,7 @@ export default function Projects() {
           {/* Badges and action links */}
           <div className="mt-6 space-y-4">
             <div className="flex flex-wrap gap-2">
-              {["Java", "Spring Boot", "React.js", "MongoDB"].map((tech) => (
+              {["Java", "Spring Boot", "React.js", "MongoDB", "Expo"].map((tech) => (
                 <span key={tech} className="text-[10px] font-mono bg-white/[0.02] border border-white/10 text-textMuted px-2 py-1 rounded">
                   {tech}
                 </span>
@@ -115,11 +118,13 @@ export default function Projects() {
             {/* Info Layout */}
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <h3 className="text-xl font-bold text-textPrimary group-hover:text-neonPurple transition-all duration-200">SoundFlow</h3>
+                <h3 className="text-xl font-bold text-textPrimary group-hover:text-neonPurple transition-all duration-200">HireNear</h3>
                 <span className="text-[10px] font-mono border border-neonPurple/30 text-neonPurple bg-neonPurple/5 px-2 py-0.5 rounded">MERN STACK</span>
               </div>
               <p className="text-sm text-textMuted leading-relaxed">
-                Full-stack audio stream application platform with adaptive bitrate streaming, real-time sync listening spaces, and custom collaborative queue channels.
+                A location-aware marketplace platform connecting clients with nearby freelance labor. Personally designed and implemented the 
+                central Competitive Bidding Engine, orchestrating transaction states, database validations, and asynchronous offer structures 
+                to secure seamless service agreements.
               </p>
             </div>
           </div>
@@ -127,14 +132,16 @@ export default function Projects() {
           {/* Badges and action links */}
           <div className="mt-6 space-y-4">
             <div className="flex flex-wrap gap-2">
-              {["MongoDB", "Express", "React", "Node.js"].map((tech) => (
+              {["MongoDB", "Express", "React", "Node.js", "React Native", "Expo"].map((tech) => (
                 <span key={tech} className="text-[10px] font-mono bg-white/[0.02] border border-white/10 text-textMuted px-2 py-1 rounded">
                   {tech}
                 </span>
               ))}
             </div>
             <div className="pt-2 border-t border-borderDefault/50">
-              <a href={soundflowRepo} {...getLinkProps(soundflowRepo)} className="text-xs font-mono text-neonPurple hover:underline block">// GitHub Repository</a>
+              <a href={hirenearRepo} {...getLinkProps(hirenearRepo)} className="text-xs font-mono text-neonPurple hover:underline block">// GitHub Repository</a>
+              <a href={hireneardesktopDemo} {...getLinkProps(hireneardesktopDemo)} className="text-xs font-mono text-neonPurple hover:underline block">// Desktop Demo</a>
+              <a href={hirenearmobileDemo} {...getLinkProps(hirenearmobileDemo)} className="text-xs font-mono text-neonPurple hover:underline block">// Mobile Demo</a>
             </div>
           </div>
         </div>
