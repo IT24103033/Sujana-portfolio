@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="w-full space-y-20">
       {/* 2-Column Grid Layout Split */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
+
         {/* Left Side: Professional pitch text layout */}
         <div className="lg:col-span-7 space-y-6 text-left">
           <div className="inline-flex items-center space-x-2 tracking-[0.25em] text-xs font-mono text-neonCyan">
@@ -18,7 +18,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg text-textMuted leading-relaxed max-w-2xl">
-            Software Engineering Student at SLIIT & Full-Stack Developer crafting performant, 
+            Software Engineering Student at SLIIT & Full-Stack Developer crafting performant,
             production-grade systems from hardware-adjacent C to distributed microservices.
           </p>
 
@@ -30,7 +30,7 @@ export default function Hero() {
               <span>Explore Projects</span>
               <span className="font-mono text-xs font-bold">&gt;</span>
             </a>
-            
+
             <a
               href="/Sujana_Resume.pdf"
               download
@@ -47,26 +47,26 @@ export default function Hero() {
         {/* Right Hand Futuristic Concentric Target Profile Framework */}
         <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
           <div className="relative w-72 h-72 sm:w-85 sm:h-85 flex items-center justify-center">
-            
+
             {/* Outer dotted dashboard ring line */}
             <div className="absolute inset-0 rounded-full border border-dashed border-white/[0.06] animate-[spin_120s_linear_infinite]" />
-            
+
             {/* Mid orbital tracking structure line */}
             <div className="absolute inset-6 rounded-full border border-white/[0.03]" />
             <div className="absolute inset-6 rounded-full border-t border-r border-neonCyan/20 animate-[spin_40s_linear_infinite]" />
-            
+
             {/* Inner dynamic containment profile shield line */}
             <div className="absolute inset-12 rounded-full border border-white/[0.05] shadow-[inset_0_0_20px_rgba(255,255,255,0.01)]" />
-            
+
             {/* The primary color gradient glowing back shadow ring */}
             <div className="absolute inset-16 rounded-full bg-gradient-to-tr from-neonPurple/20 to-neonCyan/20 opacity-40 blur-xl animate-pulse" />
 
             {/* Core Photo Frame container wrapper with a solid glow ring matching image_abd8ac.jpg */}
             <div className="absolute inset-16 rounded-full border-2 border-neonCyan bg-spaceCard flex items-center justify-center overflow-hidden group shadow-[0_0_30px_rgba(6,182,212,0.55)]">
               {/* Profile image with full opacity as standard */}
-              <img 
-                src="/profile-photo.png" 
-                alt="Sujana Dinuwara Headshot" 
+              <img
+                src="/profile-photo.png"
+                alt="Sujana Dinuwara Headshot"
                 className="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-all duration-500 min-b bg-gradient-to-b from-spaceCard to-spaceDark"
                 onError={(e) => {
                   // Fallback safe display framework if image path evaluates empty initially
@@ -87,13 +87,13 @@ export default function Hero() {
 
       </div>
 
-           
 
-      
+
+
 
       {/* Bottom Segment: Integrated Metrics analytics banner */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border border-borderDefault py-6 bg-spaceCard/40 backdrop-blur-sm rounded-xl px-8 shadow-glowCyan">
-        
+
         {/* Metric 1 */}
         <div className="space-y-1 md:border-r border-borderDefault md:pr-4">
           <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">// Projects Built</div>

@@ -27,27 +27,26 @@ export default function Skills() {
     {
       title: "Frontend",
       items: [
-        { name: "React", level: 90 },
-        { name: "Figma", level: 75 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Next.js", level: 85 },
+        { name: "React", level: 80 },
+        { name: "Figma", level: 70 },
+        { name: "Tailwind CSS", level: 75 },
+        { name: "Next.js", level: 65 },
       ],
     },
     {
       title: "Backend",
       items: [
-        { name: "Node.js", level: 85 },
+        { name: "Node.js", level: 80 },
         { name: "Express", level: 80 },
-        { name: "Spring Boot", level: 75 },
-        { name: "Java", level: 80 },
+        { name: "Spring Boot", level: 85 },
+        { name: "Java", level: 85 },
       ],
     },
     {
       title: "Systems",
       items: [
         { name: "C", level: 70 },
-        { name: "Multi-Threading", level: 65 },
-        { name: "OS Architecture", level: 80 },
+        { name: "Multi-Threading", level: 60 },
       ],
     },
     {
@@ -56,7 +55,7 @@ export default function Skills() {
         { name: "Git", level: 90 },
         { name: "IntelliJ IDEA", level: 85 },
         { name: "VS Code", level: 95 },
-        { name: "Docker", level: 70 },
+        { name: "Docker", level: 65 },
       ],
     },
   ];

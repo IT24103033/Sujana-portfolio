@@ -145,25 +145,21 @@ export default function Projects() {
             </div>
           </div>
         </div>
-
-        {/* QRGate Attendance System (Full 3-col width) */}
+        
+        {/* QRGate Attendance System (Full 3-col width)
         <div className="lg:col-span-3 flex flex-col md:flex-row justify-between border border-borderDefault bg-spaceCard/40 rounded-2xl p-6 hover:border-neonCyan/40 hover:shadow-glowCyan transition-all duration-300 group gap-6">
           
-          {/* Left Block Visual Mockup */}
           <div className="w-full md:w-1/3 h-52 rounded-xl bg-[#1b1c26] border border-white/5 flex flex-col items-center justify-center p-4 relative overflow-hidden shrink-0">
             <div className="absolute inset-0 bg-gradient-to-br from-[#12121A] to-transparent opacity-60" />
             
-            {/* Visual QR Scanning Interface */}
             <div className="relative w-28 h-28 border border-white/10 p-2 flex items-center justify-center rounded-lg">
               <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-neonCyan" />
               <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-neonCyan" />
               <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-neonCyan" />
               <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-neonCyan" />
               
-              {/* Inner scanning laser line */}
               <div className="absolute top-1/4 left-0 w-full h-0.5 bg-neonCyan shadow-[0_0_8px_#06B6D4] animate-bounce" />
 
-              {/* Dotted target circle */}
               <div className="w-20 h-20 rounded-full border border-dashed border-white/20 flex items-center justify-center">
                 <span className="text-[10px] font-mono text-neonCyan animate-pulse">VALIDATED</span>
               </div>
@@ -174,7 +170,6 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Right Block Details & Info Layout */}
           <div className="flex flex-col justify-between flex-grow">
             <div className="space-y-4">
               <div className="flex flex-wrap justify-between items-center gap-2">
@@ -201,7 +196,7 @@ export default function Projects() {
           </div>
 
         </div>
-
+        */}
       </div>
     </div>
   );
