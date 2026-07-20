@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
@@ -23,17 +24,22 @@ export default function Home() {
           <Hero />
         </section>
 
-        {/* 2. Projects Showcase Grid */}
+        {/* 2. About Me & Academic Timeline */}
+        <section id="about" className="scroll-mt-24">
+          <About />
+        </section>
+
+        {/* 3. Projects Showcase Grid */}
         <section id="projects" className="scroll-mt-24">
           <Projects />
         </section>
 
-        {/* 3. Skills Radar List */}
+        {/* 4. Skills Radar List */}
         <section id="skills" className="scroll-mt-24">
           <Skills />
         </section>
 
-        {/* 4. Collaborate and Footer segment */}
+        {/* 5. Collaborate and Footer segment */}
         <section id="contact" className="scroll-mt-24">
           <Contact />
         </section>
