@@ -18,8 +18,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg text-textMuted leading-relaxed max-w-2xl">
-            Software Engineering Student at SLIIT & Full-Stack Developer crafting performant,
-            production-grade systems from hardware-adjacent C to distributed microservices.
+          Software Engineering Student at SLIIT & Full-Stack Developer bridging the gap between secure, 
+          scalable backend systems and high-fidelity client interfaces.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">

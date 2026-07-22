@@ -16,7 +16,7 @@ export default function About() {
       description: "Focusing heavily on data structures, computer networks, database systems, and object-oriented engineering. Maintaining strong performance across theoretical foundations and project implementations.",
     },
     {
-      date: "Early 2025",
+      date: "Early 2026",
       title: "Core Projects Execution",
       institution: "Personal Engineering Portfolio",
       description: "Designed and implemented 'ScanMark' (dynamic time-secured QR attendance platform) and 'HireNear' (MERN stack job marketplace with a competitive bidding engine). Focused on data consistency, clean state machines, and API security.",
@@ -25,13 +25,13 @@ export default function About() {
       date: "Present - Future",
       title: "Seeking Software Engineering Internship",
       institution: "Industry Placement",
-      description: "Actively looking for a challenging internship role to contribute to production environments, build microservices, and collaborate with senior engineering teams.",
+      description: "Actively looking for a challenging internship role to contribute to production environments, develop robust backend services, and collaborate with senior engineering teams.",
     },
   ];
 
   const profileInfo = [
     { label: "Major", value: "Software Engineering" },
-    { label: "Institution", value: "SLIIT (Colombo, LK)" },
+    { label: "Institution", value: "SLIIT (Malabe)" },
     { label: "Core Stack", value: "Java, Spring Boot, React, MongoDB" },
     { label: "Career Goal", value: "Software Engineering Intern" },
   ];
@@ -57,7 +57,7 @@ export default function About() {
               Bridging the gap between scalable backend systems and high-fidelity frontends.
             </h3>
             <p className="text-sm text-textMuted leading-relaxed">
-              I am a Software Engineering Student at the Sri Lanka Institute of Information Technology (SLIIT). My interest lies in building robust backends, optimizing system performances, and designing interactive client interfaces. I enjoy writing clean, typed code and applying structure to complex systems.
+              I am a third-year Software Engineering Student at the Sri Lanka Institute of Information Technology (SLIIT). My interest lies in building robust backends, optimizing system performance, and designing interactive client interfaces. I enjoy writing clean, typed code and applying structure to complex systems.
             </p>
             <p className="text-sm text-textMuted leading-relaxed">
               Currently, I am looking to apply my training in Java/Spring Boot, React/Next.js, and database architectures (MongoDB, MySQL) within a professional engineering team through a software developer internship.
