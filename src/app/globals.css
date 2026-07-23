@@ -33,6 +33,14 @@ html, body {
   padding: 0;
 }
 
+.bg-spaceDark { background-color: #0C0D0E; }
+.bg-spaceCard { background-color: #141619; }
+.text-textPrimary { color: #F3F4F6; }
+.text-textMuted { color: #9CA3AF; }
+.text-neonCyan { color: #06B6D4; }
+.text-neonPurple { color: #A855F7; }
+.border-borderDefault { border-color: #272A30; }
+
 /* STREAMING_CHUNK: Custom cyber scrollbar styling for a premium look... */
 ::-webkit-scrollbar {
   width: 8px;
