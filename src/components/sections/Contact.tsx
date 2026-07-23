@@ -79,6 +79,8 @@ export default function Contact() {
 
           {/* Secure interactive multi-line input panel */}
           <form onSubmit={handleSubmit} className="space-y-6 text-left">
+            {/* Formspree Honeypot Anti-Spam Field */}
+            <input type="text" name="_gotcha" tabIndex={-1} className="hidden" />
             
             {/* 1. Name Field */}
             <div className="space-y-2">

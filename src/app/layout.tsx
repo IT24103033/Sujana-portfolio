@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: "Sujana Dinuwara | Full-Stack Software Engineer & Systems Developer",
   description: "Portfolio of Sujana Dinuwara, a Software Engineering Student at SLIIT and Full-Stack Developer specializing in scalable backend systems and high-fidelity frontends.",
   keywords: [
@@ -34,11 +35,20 @@ export const metadata: Metadata = {
     description: "Software Engineering Student & Full-Stack Developer crafting performant, production-grade systems from C to distributed microservices.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Sujana Dinuwara Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sujana Dinuwara | Full-Stack Software Engineer & Systems Developer",
     description: "Software Engineering Student & Full-Stack Developer crafting performant, production-grade systems from C to distributed microservices.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
