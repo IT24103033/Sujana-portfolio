@@ -36,7 +36,7 @@ export default function Hero() {
               download
               className="inline-flex items-center space-x-2 px-6 py-3 border border-borderDefault bg-spaceCard hover:bg-white/[0.04] text-textPrimary hover:border-textMuted hover:scale-[1.02] font-medium text-sm rounded-lg transition-all duration-300"
             >
-              <svg className="w-4 h-4 text-textMuted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg width="16" height="16" className="w-4 h-4 text-textMuted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
               <span>Download Resume</span>
@@ -46,7 +46,7 @@ export default function Hero() {
 
         {/* Right Hand Futuristic Concentric Target Profile Framework */}
         <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
-          <div className="relative w-72 h-72 sm:w-85 sm:h-85 flex items-center justify-center">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 max-w-[85vw] max-h-[85vw] flex items-center justify-center">
 
             {/* Outer dotted dashboard ring line */}
             <div className="absolute inset-0 rounded-full border border-dashed border-white/[0.06] animate-[spin_120s_linear_infinite]" />
