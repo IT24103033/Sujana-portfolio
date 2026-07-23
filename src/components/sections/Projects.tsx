@@ -30,53 +30,14 @@ export default function Projects() {
         <div className="lg:col-span-2 flex flex-col justify-between border border-borderDefault bg-spaceCard/40 rounded-2xl p-6 hover:border-neonCyan/40 hover:shadow-glowCyan transition-all duration-300 group">
           <div className="space-y-6">
             
-            {/* ScanMark Dynamic QR Verification HUD Visual Mockup */}
-            <div className="w-full h-48 rounded-xl bg-[#12141c] border border-white/5 flex items-center justify-between p-6 overflow-hidden relative group-hover:border-neonCyan/30 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-tr from-neonCyan/5 via-transparent to-neonPurple/5 opacity-60" />
-              
-              {/* Left HUD Log Detail */}
-              <div className="hidden sm:flex flex-col justify-between h-full z-10 font-mono text-[10px] space-y-2">
-                <div className="space-y-1">
-                  <span className="text-neonCyan block">// SESSION SYNC</span>
-                  <span className="text-textMuted block">ID: #SM-8924</span>
-                </div>
-                <div className="space-y-1">
-                  <span className="text-textMuted block">MODE: TIME-SECURED</span>
-                  <span className="text-neonCyan/80 block">PROXY: PREVENTED</span>
-                </div>
-              </div>
-
-              {/* Center Target Scanning Module */}
-              <div className="relative w-28 h-28 border border-white/10 p-2 flex items-center justify-center rounded-xl bg-spaceDark/60 backdrop-blur-md mx-auto sm:mx-0 z-10 shadow-[0_0_20px_rgba(6,182,212,0.15)]">
-                {/* Target Corners */}
-                <div className="absolute top-0 left-0 w-3.5 h-3.5 border-t-2 border-l-2 border-neonCyan" />
-                <div className="absolute top-0 right-0 w-3.5 h-3.5 border-t-2 border-r-2 border-neonCyan" />
-                <div className="absolute bottom-0 left-0 w-3.5 h-3.5 border-b-2 border-l-2 border-neonCyan" />
-                <div className="absolute bottom-0 right-0 w-3.5 h-3.5 border-b-2 border-r-2 border-neonCyan" />
-                
-                {/* Scanning Laser Line */}
-                <div className="absolute top-1/4 left-0 w-full h-0.5 bg-neonCyan shadow-[0_0_12px_#06B6D4] animate-pulse" />
-
-                {/* Inner Scanning Radar Ring */}
-                <div className="w-20 h-20 rounded-full border border-dashed border-neonCyan/40 flex flex-col items-center justify-center gap-1">
-                  <svg className="w-6 h-6 text-neonCyan animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v1m0 14v1m8-8h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
-                  </svg>
-                  <span className="text-[9px] font-mono text-neonCyan font-bold tracking-widest">VERIFIED</span>
-                </div>
-              </div>
-
-              {/* Right HUD Session Stats */}
-              <div className="hidden sm:flex flex-col justify-between h-full z-10 text-right font-mono text-[10px]">
-                <div className="space-y-1">
-                  <span className="text-textMuted block">STAMP</span>
-                  <span className="text-textPrimary font-semibold block">09:41:02 AM</span>
-                </div>
-                <div className="space-y-1">
-                  <span className="text-neonCyan block">MODULE</span>
-                  <span className="text-textMuted block">SLIIT_CS3040</span>
-                </div>
-              </div>
+            {/* ScanMark Image Preview Block */}
+            <div className="w-full h-48 sm:h-64 rounded-xl bg-[#12141c] border border-white/10 overflow-hidden relative group-hover:border-neonCyan/40 shadow-inner transition-all duration-300">
+              <img 
+                src="/scanmark-preview.png" 
+                alt="ScanMark Attendance System Preview" 
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-spaceDark/60 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Info Layout */}
@@ -109,55 +70,18 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* SoundFlow Music App (1/3 width) */}
+        {/* HireNear Project Card (1/3 width) */}
         <div className="flex flex-col justify-between border border-borderDefault bg-spaceCard/40 rounded-2xl p-6 hover:border-neonPurple/40 hover:shadow-glowPurple transition-all duration-300 group">
           <div className="space-y-6">
             
-            {/* HireNear Location Bidding Marketplace Visual Mockup */}
-            <div className="w-full h-48 rounded-xl bg-[#12141c] border border-white/5 flex flex-col justify-between p-4 relative overflow-hidden group-hover:border-neonPurple/40 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-neonPurple/10 via-transparent to-neonCyan/5 opacity-60" />
-              
-              {/* Header Status Tag */}
-              <div className="flex items-center justify-between font-mono text-[10px] z-10">
-                <span className="text-neonPurple font-bold flex items-center space-x-1.5">
-                  <span className="w-2 h-2 rounded-full bg-neonPurple animate-pulse shadow-[0_0_8px_#A855F7]" />
-                  <span>BIDDING ENGINE ACTIVE</span>
-                </span>
-                <span className="text-textMuted border border-white/10 px-2 py-0.5 rounded bg-spaceDark/40">RADIAL: 2.5 KM</span>
-              </div>
-              
-              {/* Marketplace Map Radar Node & Bid Card */}
-              <div className="flex items-center justify-between gap-3 z-10 my-auto">
-                {/* Active Bid Transaction Card */}
-                <div className="flex-1 bg-spaceDark/80 border border-neonPurple/30 rounded-lg p-2.5 space-y-1.5 shadow-glowPurple">
-                  <div className="flex justify-between items-center text-[10px] font-mono">
-                    <span className="text-textMuted">OFFER #482</span>
-                    <span className="text-neonPurple font-bold">$45.00/HR</span>
-                  </div>
-                  <div className="w-full h-1.5 bg-white/10 rounded overflow-hidden">
-                    <div className="w-4/5 h-full bg-neonPurple rounded shadow-[0_0_8px_#A855F7]" />
-                  </div>
-                  <div className="text-[9px] font-mono text-neonCyan flex justify-between">
-                    <span>STATE: MATCHED</span>
-                    <span>DISTANCE: 1.2KM</span>
-                  </div>
-                </div>
-
-                {/* Location Radar Node Graphic */}
-                <div className="w-12 h-12 rounded-full border border-neonPurple/40 bg-neonPurple/5 flex items-center justify-center relative shrink-0">
-                  <div className="absolute inset-0 rounded-full border border-dashed border-neonPurple/30 animate-[spin_20s_linear_infinite]" />
-                  <svg className="w-5 h-5 text-neonPurple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Bottom Transaction Footer */}
-              <div className="flex items-center justify-between text-[9px] font-mono text-textMuted z-10 pt-1 border-t border-white/5">
-                <span>ASYNC OFFER MATCHING</span>
-                <span className="text-neonPurple font-semibold">AGREEMENT SECURED</span>
-              </div>
+            {/* HireNear Image Preview Block */}
+            <div className="w-full h-48 sm:h-64 rounded-xl bg-[#12141c] border border-white/10 overflow-hidden relative group-hover:border-neonPurple/40 shadow-inner transition-all duration-300">
+              <img 
+                src="/hirenear-preview.png" 
+                alt="HireNear Marketplace App Preview" 
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-spaceDark/60 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Info Layout */}
