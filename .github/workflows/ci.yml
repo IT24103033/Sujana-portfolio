@@ -1,0 +1,47 @@
+name: Portfolio CI Pipeline
+
+# 1. Define when this workflow shuld run
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+# 2. Define Jobs
+jobs:
+  build-and-test:
+    name: Build and Quality Verification
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step A: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+    # Step B: Setup the Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+        
+    # Step C: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+        
+    # Step D: Run Next.js Linter (checks syntax and code conventions)
+      - name: Run Next.js Linter
+        run: npm run lint
+
+    # Step E: Verify TypeScript Types (ensure zero type erros)
+      - name: Verify TypeScript Types
+        run: npx tsc --noEmit
+
+    # Step F: Test Production Build (verifies Next.js compiles without errors)
+      - name: Test Production Version
+        run: npm run build
+
+    
+
+    
+      
