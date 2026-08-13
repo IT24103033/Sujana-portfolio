@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+const S = "//";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -173,12 +175,12 @@ export default function Contact() {
             {/* Submission HUD diagnostics responses */}
             {status === "SUCCESS" && (
               <span className="text-xs font-mono text-neonCyan block tracking-wider text-center animate-pulse pt-2">
-                // System validation active. Secure handshake established.
+                {S} System validation active. Secure handshake established.
               </span>
             )}
             {status === "ERROR" && (
               <span className="text-xs font-mono text-rose-500 block tracking-wider text-center pt-2">
-                // Warning: Packet loss detected. Verify Formspree configuration ID.
+                {S} Warning: Packet loss detected. Verify Formspree configuration ID.
               </span>
             )}
           </form>

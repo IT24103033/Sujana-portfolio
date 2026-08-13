@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 
+const S = "//";
+
 interface SkillItem {
   name: string;
   level: number;
@@ -19,8 +21,9 @@ export default function Skills() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Triggers the progressive fill animation on page load
-    setMounted(true);
+    // Triggers the progressive fill animation on page load via animation frame
+    const timer = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(timer);
   }, []);
 
   const skillCategories: SkillCategory[] = [
@@ -74,7 +77,7 @@ export default function Skills() {
       {/* Segment Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b border-borderDefault pb-4 gap-2">
         <div>
-          <span className="text-xs font-mono text-neonPurple tracking-widest uppercase block mb-1">// CAPABILITIES</span>
+          <span className="text-xs font-mono text-neonPurple tracking-widest uppercase block mb-1">{S} CAPABILITIES</span>
           <h2 className="text-3xl font-bold tracking-tight text-textPrimary">Technical Arsenal</h2>
         </div>
         <span className="text-xs font-mono text-textMuted">Active Proficiency Radar</span>
@@ -129,7 +132,7 @@ export default function Skills() {
         activeSkill ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
       }`}>
         <div className="flex items-center space-x-3">
-          <span className="text-xs font-mono text-textMuted">// ACTIVE DIRECTIVE:</span>
+          <span className="text-xs font-mono text-textMuted">{S} ACTIVE DIRECTIVE:</span>
           <span className="text-sm font-bold text-textPrimary">{activeSkill}</span>
         </div>
         <div className="flex items-center space-x-4 flex-grow max-w-md ml-6">

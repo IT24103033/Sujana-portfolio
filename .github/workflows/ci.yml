@@ -33,9 +33,9 @@ jobs:
       - name: Run Next.js Linter
         run: npm run lint
 
-    # Step E: Verify TypeScript Types (ensure zero type erros)
+    # Step E: Verify TypeScript Types (ensure zero type errors)
       - name: Verify TypeScript Types
-        run: npx tsc --noEmit
+        run: npm run typecheck
 
     # Step F: Test Production Build (verifies Next.js compiles without errors)
       - name: Test Production Version

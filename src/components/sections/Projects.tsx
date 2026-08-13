@@ -1,5 +1,7 @@
 "use client";
 
+const S = "//";
+
 export default function Projects() {
   const getLinkProps = (url: string) => {
     return url.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {};
@@ -9,7 +11,6 @@ export default function Projects() {
   const hirenearRepo = process.env.NEXT_PUBLIC_HIRENEAR_REPO || "#";
   const hireneardesktopDemo = process.env.NEXT_PUBLIC_HIRENEAR_DESKTOP_DEMO || "#";
   const hirenearmobileDemo = process.env.NEXT_PUBLIC_HIRENEAR_MOBILE_DEMO || "#";
-  const qrGateCase = process.env.NEXT_PUBLIC_QRGATE_CASE || "#";
 
 
   return (
@@ -17,7 +18,7 @@ export default function Projects() {
       {/* Segment Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b border-borderDefault pb-4 gap-2">
         <div>
-          <span className="text-xs font-mono text-neonCyan tracking-widest uppercase block mb-1">// SELECTED WORK</span>
+          <span className="text-xs font-mono text-neonCyan tracking-widest uppercase block mb-1">{S} SELECTED WORK</span>
           <h2 className="text-3xl font-bold tracking-tight text-textPrimary">Project Showcase</h2>
         </div>
         <span className="text-xs font-mono text-textMuted">3 case studies</span>
@@ -32,6 +33,7 @@ export default function Projects() {
             
             {/* ScanMark Image Preview Block */}
             <div className="w-full h-48 sm:h-64 rounded-xl bg-[#12141c] border border-white/10 overflow-hidden relative group-hover:border-neonCyan/40 shadow-inner transition-all duration-300">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src="/scanmark-preview.png" 
                 alt="ScanMark Attendance System Preview" 
@@ -65,7 +67,7 @@ export default function Projects() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-2 border-t border-borderDefault/50">
-              <a href={scanmarkRepo} {...getLinkProps(scanmarkRepo)} className="text-xs font-mono text-neonCyan hover:underline">// GitHub Repository</a>
+              <a href={scanmarkRepo} {...getLinkProps(scanmarkRepo)} className="text-xs font-mono text-neonCyan hover:underline">{S} GitHub Repository</a>
             </div>
           </div>
         </div>
@@ -76,6 +78,7 @@ export default function Projects() {
             
             {/* HireNear Image Preview Block */}
             <div className="w-full h-48 sm:h-64 rounded-xl bg-[#12141c] border border-white/10 overflow-hidden relative group-hover:border-neonPurple/40 shadow-inner transition-all duration-300">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src="/hirenear-preview.png" 
                 alt="HireNear Marketplace App Preview" 
@@ -108,9 +111,9 @@ export default function Projects() {
               ))}
             </div>
             <div className="pt-2 border-t border-borderDefault/50">
-              <a href={hirenearRepo} {...getLinkProps(hirenearRepo)} className="text-xs font-mono text-neonPurple hover:underline block">// GitHub Repository</a>
-              <a href={hireneardesktopDemo} {...getLinkProps(hireneardesktopDemo)} className="text-xs font-mono text-neonPurple hover:underline block">// Desktop Demo</a>
-              <a href={hirenearmobileDemo} {...getLinkProps(hirenearmobileDemo)} className="text-xs font-mono text-neonPurple hover:underline block">// Mobile Demo</a>
+              <a href={hirenearRepo} {...getLinkProps(hirenearRepo)} className="text-xs font-mono text-neonPurple hover:underline block">{S} GitHub Repository</a>
+              <a href={hireneardesktopDemo} {...getLinkProps(hireneardesktopDemo)} className="text-xs font-mono text-neonPurple hover:underline block">{S} Desktop Demo</a>
+              <a href={hirenearmobileDemo} {...getLinkProps(hirenearmobileDemo)} className="text-xs font-mono text-neonPurple hover:underline block">{S} Mobile Demo</a>
             </div>
           </div>
         </div>

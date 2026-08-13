@@ -7,6 +7,8 @@ interface Milestone {
   description: string;
 }
 
+const S = "//";
+
 export default function About() {
   const milestones: Milestone[] = [
     {
@@ -30,8 +32,8 @@ export default function About() {
   ];
 
   const profileInfo = [
-    { label: "Major", value: "Software Engineering" },
-    { label: "Institution", value: "SLIIT (Malabe)" },
+    { label: "Location", value: "Colombo, Sri Lanka" },
+    { label: "Education", value: "BSc (Hons) in Information Technology" },
     { label: "Core Stack", value: "Java, Spring Boot, React, MongoDB" },
     { label: "Career Goal", value: "Software Engineering Intern" },
   ];
@@ -41,7 +43,7 @@ export default function About() {
       {/* Segment Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b border-borderDefault pb-4 gap-2">
         <div>
-          <span className="text-xs font-mono text-neonCyan tracking-widest uppercase block mb-1">// IDENTITY</span>
+          <span className="text-xs font-mono text-neonCyan tracking-widest uppercase block mb-1">{S} IDENTITY</span>
           <h2 className="text-3xl font-bold tracking-tight text-textPrimary">Profile Summary</h2>
         </div>
         <span className="text-xs font-mono text-textMuted">Student Credentials & Timeline</span>
@@ -71,7 +73,7 @@ export default function About() {
                 key={info.label} 
                 className="border border-borderDefault bg-spaceCard/20 p-4 rounded-xl space-y-1 hover:border-neonCyan/30 transition-all duration-300"
               >
-                <div className="text-[10px] font-mono text-textMuted tracking-wider uppercase">// {info.label}</div>
+                <div className="text-[10px] font-mono text-textMuted tracking-wider uppercase">{S} {info.label}</div>
                 <div className="text-sm font-semibold text-textPrimary">{info.value}</div>
               </div>
             ))}
@@ -94,7 +96,7 @@ export default function About() {
                 {/* Content */}
                 <div className="space-y-1">
                   <span className="text-[10px] font-mono text-neonCyan group-hover:text-neonPurple transition-all duration-300 uppercase tracking-widest block">
-                    // {milestone.date}
+                    {S} {milestone.date}
                   </span>
                   <h4 className="text-base font-bold text-textPrimary transition-colors duration-300 group-hover:text-textPrimary">
                     {milestone.title}

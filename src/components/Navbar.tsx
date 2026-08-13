@@ -2,17 +2,19 @@
 
 import { useState, useEffect } from "react";
 
+const S = "//";
+
+const NAV_ITEMS = [
+  { label: "Home", id: "home" },
+  { label: "About", id: "about" },
+  { label: "Projects", id: "projects" },
+  { label: "Skills", id: "skills" },
+  { label: "Contact", id: "contact" },
+];
+
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { label: "Home", id: "home" },
-    { label: "About", id: "about" },
-    { label: "Projects", id: "projects" },
-    { label: "Skills", id: "skills" },
-    { label: "Contact", id: "contact" },
-  ];
 
   useEffect(() => {
     const observerOptions = {
@@ -31,7 +33,7 @@ export default function Navbar() {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    navItems.forEach((item) => {
+    NAV_ITEMS.forEach((item) => {
       const el = document.getElementById(item.id);
       if (el) observer.observe(el);
     });
@@ -52,7 +54,7 @@ export default function Navbar() {
 
         {/* Center Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-10">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
@@ -62,7 +64,7 @@ export default function Navbar() {
                   : "text-textMuted hover:text-textPrimary"
               }`}
             >
-              <span className="opacity-40 mr-1">//</span>
+              <span className="opacity-40 mr-1">{S}</span>
               {item.label}
               {activeSection === item.id && (
                 <span className="absolute bottom-0 left-0 w-full h-[2px] bg-neonCyan shadow-[0_0_8px_#06B6D4]" />
@@ -106,7 +108,7 @@ export default function Navbar() {
         isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
       }`}>
         <nav className="flex flex-col p-6 space-y-4">
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
@@ -117,7 +119,7 @@ export default function Navbar() {
                   : "text-textMuted"
               }`}
             >
-              <span className="opacity-40 mr-2">//</span>
+              <span className="opacity-40 mr-2">{S}</span>
               {item.label}
             </a>
           ))}

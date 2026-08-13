@@ -1,5 +1,7 @@
 "use client";
 
+const S = "//";
+
 export default function Hero() {
   return (
     <div className="w-full space-y-20">
@@ -64,6 +66,7 @@ export default function Hero() {
             {/* Core Photo Frame container wrapper with a solid glow ring matching image_abd8ac.jpg */}
             <div className="absolute inset-16 rounded-full border-2 border-neonCyan bg-spaceCard flex items-center justify-center overflow-hidden group shadow-[0_0_30px_rgba(6,182,212,0.55)]">
               {/* Profile image with full opacity as standard */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/profile-photo.png"
                 alt="Sujana Dinuwara Headshot"
@@ -87,16 +90,12 @@ export default function Hero() {
 
       </div>
 
-
-
-
-
       {/* Bottom Segment: Integrated Metrics analytics banner */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 border border-borderDefault py-6 bg-spaceCard/40 backdrop-blur-sm rounded-xl px-8 shadow-glowCyan">
 
         {/* Metric 1 */}
         <div className="space-y-1 md:border-r border-borderDefault md:pr-4">
-          <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">// Projects Built</div>
+          <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">{S} Projects Built</div>
           <div className="text-xl font-bold text-textPrimary flex items-center space-x-2">
             <span className="text-neonCyan">4+</span>
             <span className="text-xs font-normal text-textMuted font-mono">Deployments</span>
@@ -105,7 +104,7 @@ export default function Hero() {
 
         {/* Metric 2 */}
         <div className="space-y-1 md:border-r border-borderDefault md:px-6">
-          <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">// Core Stack</div>
+          <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">{S} Core Stack</div>
           <div className="text-xl font-bold text-textPrimary">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-textPrimary to-textMuted">MERN & Spring Boot</span>
           </div>
@@ -113,7 +112,7 @@ export default function Hero() {
 
         {/* Metric 3 */}
         <div className="space-y-1 md:pl-6">
-          <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">// Active Learning</div>
+          <div className="text-[10px] font-mono text-textMuted tracking-widest uppercase">{S} Active Learning</div>
           <div className="text-xl font-bold text-textPrimary">
             <span className="text-neonPurple drop-shadow-[0_0_8px_rgba(168,85,247,0.4)] font-semibold">DevOps</span>
           </div>
