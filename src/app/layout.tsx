@@ -19,8 +19,10 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sujanadinuwara.me";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
   title: "Sujana Dinuwara | Full-Stack Software Engineer & Systems Developer",
   description: "Portfolio of Sujana Dinuwara, a Software Engineering Student at SLIIT and Full-Stack Developer specializing in scalable backend systems and high-fidelity frontends.",
   keywords: [
@@ -37,9 +39,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Sujana Dinuwara" }],
   creator: "Sujana Dinuwara",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     title: "Sujana Dinuwara | Full-Stack Software Engineer & Systems Developer",
     description: "Software Engineering Student & Full-Stack Developer crafting performant, production-grade systems from C to distributed microservices.",
+    url: siteUrl,
+    siteName: "Sujana Dinuwara",
     type: "website",
     locale: "en_US",
     images: [
@@ -60,6 +67,10 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   icons: {
     icon: "/icon.svg",
